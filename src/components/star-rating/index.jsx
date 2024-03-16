@@ -29,7 +29,7 @@ export default function StarRating({noOfStars = 5}){
                     <FaStar
                     className={`${
                         index <= (hover || rating) ? 'text-yellow-500' : 'text-gray-300/70'
-                        } cursor-pointer transition-colors duration-200 `}                        
+                        } cursor-pointer transition-colors duration-300 hover:scale-110 `}                        
                         key={index}
                         onClick={
                             () => handleClick(index)
